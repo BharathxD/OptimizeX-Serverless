@@ -1,6 +1,6 @@
 # Effortless Image Optimization at Scale: A Serverless Cloud Application
 
-![Project Demonstration](./Serverless.png)
+![Project Demonstration](./serverless.png)
 
 This repository contains the code for a Serverless Cloud Application that leverages various AWS services for image processing and optimization.
 
