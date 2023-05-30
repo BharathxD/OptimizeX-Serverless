@@ -49,6 +49,13 @@ export const handler = async (event) => {
 
         await s3.putObject(putObjectParams).promise();
 
+        await s3
+          .deleteObject({
+            Bucket: bucket,
+            Key: key,
+          })
+          .promise();
+
         console.log(`Processed record: ${JSON.stringify(record)}`);
       } catch (error) {
         console.error("Error processing record:", error);
